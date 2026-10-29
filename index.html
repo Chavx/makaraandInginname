@@ -313,7 +313,7 @@
 
     <div class="card">
         <h2>បង្កើតលីងអញ្ជើញភ្ញៀវ</h2>
-        <h2 class="names">ឡៅ ប៊ុនថេង & ញ៉ាញ់ ស៊ីវហ៊</h2>
+        <h2 class="names">នី សុវណ្ណមករា និង សួង អាយងីន</h2>
         
         <label for="guestName">ឈ្មោះភ្ញៀវ៖</label>
         <input type="text" id="guestName" placeholder="ឧ. លោក និង លោកស្រី សុខ សុភា">
@@ -329,12 +329,12 @@
                     <div class="qr-card-overline">WEDDING INVITATION</div>
                     <div class="qr-card-photo-frame">
                         <img id="qrCardPhoto" src="./MakaraandIngin.jpg" alt="រូបថតគូស្វាមីភរិយា" onerror="this.style.display='none'; document.getElementById('qrPhotoFallback').style.display='flex';">
-                        <div id="qrPhotoFallback" class="qr-photo-fallback">💍<br>ឡៅ ប៊ុនថេង &amp; ញ៉ាញ់ ស៊ីវហ៊</div>
+                        <div id="qrPhotoFallback" class="qr-photo-fallback">💍<br>នី សុវណ្ណមករា និង សួង អាយងីន</div>
                     </div>
                     <div class="qr-card-heading">សូមស្កេន QR Code</div>
-                    <div class="qr-card-description">ដើម្បីបើកកាតអញ្ជើញមង្គលការ<br>របស់ ឡៅ ប៊ុនថេង &amp; ញ៉ាញ់ ស៊ីវហ៊</div>
+                    <div class="qr-card-description">ដើម្បីបើកកាតអញ្ជើញមង្គលការ<br>របស់ នី សុវណ្ណមករា និង សួង អាយងីន</div>
                     <div id="qrcode" class="design-qr"></div>
-                    <div class="qr-card-names">ឡៅ ប៊ុនថេង <span>&amp;</span> ញ៉ាញ់ ស៊ីវហ៊</div>
+                    <div class="qr-card-names">នី សុវណ្ណមករា <span>និង</span> សួង អាយងីន</div>
                     <div class="qr-card-footer">សូមគោរពអញ្ជើញ និងរង់ចាំស្វាគមន៍ដោយក្តីរីករាយ</div>
                 </div>
             </div>
@@ -512,7 +512,7 @@
                 ctx.font = "bold 32px sans-serif";
                 ctx.fillText("♥", W / 2, py + 175);
                 ctx.font = "bold 24px sans-serif";
-                ctx.fillText("Lao Buntheng & Nhan Sivhor", W / 2, py + 225);
+                ctx.fillText("នី សុវណ្ណមករា និង សួង អាយងីន", W / 2, py + 225);
             }
 
             ctx.fillStyle = "#5f4b32";
@@ -521,7 +521,7 @@
             ctx.fillStyle = "#6e675c";
             ctx.font = "22px sans-serif";
             ctx.fillText("ដើម្បីបើកកាតអញ្ជើញមង្គលការ", W / 2, 642);
-            ctx.fillText("របស់ ឡៅ ប៊ុនថេង & ញ៉ាញ់ ស៊ីវហ៊", W / 2, 676);
+            ctx.fillText("របស់ នី សុវណ្ណមករា និង សួង អាយងីន", W / 2, 676);
 
             // Draw a clean white quiet zone around the QR so it remains easy to scan.
             const qrSize = 300, qx = (W - qrSize) / 2, qy = 710;
@@ -541,7 +541,7 @@
             ctx.textAlign = "center";
             ctx.fillStyle = "#6b5330";
             ctx.font = "bold 27px sans-serif";
-            ctx.fillText("ឡៅ ប៊ុនថេង  &  ញ៉ាញ់ ស៊ីវហ៊", W / 2, 1090);
+            ctx.fillText("នី សុវណ្ណមករា និង សួង អាយងីន", W / 2, 1090);
             ctx.fillStyle = "#918473";
             ctx.font = "20px sans-serif";
             ctx.fillText("សូមគោរពអញ្ជើញ និងរង់ចាំស្វាគមន៍ដោយក្តីរីករាយ", W / 2, 1140);
@@ -568,7 +568,7 @@
         function copyFullMessage() {
             if (!actualLinkToCopy || !currentGuestName) return;
 
-            let fullText = `អាពាហ៍ពិពាហ៍ ឡៅ ប៊ុនថេង & ញ៉ាញ់ ស៊ីវហ៊ 💍\nសូមគោរពអញ្ជើញ ${currentGuestName} ចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីមង្គលការរបស់យើងខ្ញុំ ❤️\n\n🔗 សូមចុចទីនេះដើម្បីបើកកាតអញ្ជើញ៖\n${actualLinkToCopy}`;
+            let fullText = `អាពាហ៍ពិពាហ៍ នី សុវណ្ណមករា និង សួង អាយងីន 💍\nសូមគោរពអញ្ជើញ ${currentGuestName} ចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីមង្គលការរបស់យើងខ្ញុំ ❤️\n\n🔗 សូមចុចទីនេះដើម្បីបើកកាតអញ្ជើញ៖\n${actualLinkToCopy}`;
 
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(fullText).then(() => {
@@ -599,7 +599,7 @@
             if (!actualLinkToCopy || !currentGuestName) return;
 
             // Telegram receives the URL separately, so do not repeat it in message text.
-            let messageText = `អាពាហ៍ពិពាហ៍ ឡៅ ប៊ុនថេង & ញ៉ាញ់ ស៊ីវហ៊ 💍\nសូមគោរពអញ្ជើញ ${currentGuestName} ចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីមង្គលការរបស់យើងខ្ញុំ ❤️`;
+            let messageText = `អាពាហ៍ពិពាហ៍ នី សុវណ្ណមករា និង សួង អាយងីន 💍\nសូមគោរពអញ្ជើញ ${currentGuestName} ចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីមង្គលការរបស់យើងខ្ញុំ ❤️`;
             let telegramUrl = `https://t.me/share/url?url=${encodeURIComponent(actualLinkToCopy)}&text=${encodeURIComponent(messageText)}`;
             window.open(telegramUrl, '_blank', 'noopener,noreferrer');
         }
